@@ -1,312 +1,726 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sardar Store LLP | A Trust Where Quality Matters</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#f5f8fc;color:#172033}
-header{
-  background:#0057b8;color:white;padding:18px 7%;
-  display:flex;justify-content:space-between;align-items:center;
-  position:sticky;top:0;z-index:1000
-}
-.logo{font-size:24px;font-weight:bold}
-.logo small{display:block;font-size:11px;font-weight:normal;margin-top:3px}
-nav a{color:white;text-decoration:none;margin-left:22px;font-weight:bold}
-.hero{
-  min-height:560px;padding:80px 7%;display:flex;align-items:center;
-  background:linear-gradient(135deg,#003b7a,#0084e8);color:white
-}
-.hero-content{max-width:720px}
-.badge{
-  display:inline-block;background:rgba(255,255,255,.15);
-  padding:8px 15px;border-radius:30px;margin-bottom:20px
-}
-h1{font-size:56px;line-height:1.1;margin-bottom:20px}
-h1 span{color:#75d0ff}
-.hero p{font-size:20px;line-height:1.7;margin-bottom:30px}
-.btn{
-  display:inline-block;padding:14px 24px;border-radius:8px;
-  text-decoration:none;font-weight:bold;margin-right:10px
-}
-.btn-white{background:white;color:#0057b8}
-.btn-outline{border:1px solid white;color:white}
-section{padding:75px 7%}
-.title{text-align:center;margin-bottom:45px}
-.title h2{font-size:36px;color:#003b7a}
-.title p{color:#667085;margin-top:8px}
-.about{background:white}
-.about-box{max-width:900px;margin:auto;text-align:center;font-size:18px;line-height:1.8;color:#4b5563}
-.tagline{color:#0066cc;font-weight:bold;font-style:italic}
-.grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px
-}
-.card{
-  background:white;padding:30px 20px;text-align:center;border-radius:15px;
-  box-shadow:0 5px 20px rgba(0,0,0,.07);transition:.3s
-}
-.card:hover{transform:translateY(-7px)}
-.icon{font-size:42px;margin-bottom:12px}
-.card h3{color:#0057a8;margin-bottom:8px}
-.card p{color:#667085;font-size:14px}
-.business{background:#eef6ff}
-.business-card{text-align:left;border-left:5px solid #0066cc}
-.contact{background:white}
-.contact-box{
-  max-width:800px;margin:auto;background:#f1f7ff;
-  padding:35px;border-radius:15px;text-align:center
-}
-.contact-box p{margin:12px;font-size:17px}
-.whatsapp{
-  display:inline-block;background:#128c7e;color:white;
-  padding:14px 25px;border-radius:8px;text-decoration:none;font-weight:bold;
-  margin-top:15px
-}
-footer{background:#002b57;color:white;text-align:center;padding:35px 7%}
-footer p{margin:7px}
-@media(max-width:700px){
- header{flex-direction:column;gap:15px}
- nav a{margin:0 6px;font-size:12px}
- .hero{padding:60px 6%;min-height:520px}
- h1{font-size:40px}
- .hero p{font-size:17px}
- section{padding:55px 6%}
- .title h2{font-size:29px}
-}
-</style>
+    <title>Sardar Store LLP | General Store & Trading</title>
+
+    <meta name="description" content="Sardar Store LLP - General trading, import & export, agricultural machinery, dairy farming, electrical & electronics, automotive, solar energy, food, garments and general merchandise.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8fc;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #0057b8;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            opacity: 0.75;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #0057b8, #0084ff);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 18px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #dff0ff;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px;
+            transition: 0.3s;
+        }
+
+        .btn-white {
+            background: white;
+            color: #0057b8;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: #0057b8;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #6b7280;
+        }
+
+        /* ABOUT */
+        .about-box {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+
+        .about-box h3 {
+            color: #0057b8;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            max-width: 900px;
+            margin: auto;
+            color: #4b5563;
+        }
+
+        .highlight {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #0057b8;
+            font-size: 18px;
+        }
+
+        /* CATEGORIES */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 15px;
+            box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+            border: 1px solid #e5edf7;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,87,184,0.12);
+        }
+
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #0057b8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* BUSINESS */
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .business-card {
+            background: #0057b8;
+            color: white;
+            padding: 30px 22px;
+            border-radius: 16px;
+        }
+
+        .business-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .business-card p {
+            font-size: 14px;
+            opacity: 0.92;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: white;
+            border-radius: 18px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-info h3 {
+            color: #0057b8;
+            margin-bottom: 18px;
+            font-size: 24px;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #111827;
+        }
+
+        .contact-item a {
+            color: #0057b8;
+            text-decoration: none;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 15px;
+            background: #16a34a;
+            color: white !important;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .business-profile {
+            background: #f0f6ff;
+            border-radius: 14px;
+            padding: 25px;
+        }
+
+        .business-profile h3 {
+            color: #0057b8;
+            margin-bottom: 12px;
+        }
+
+        .business-profile p {
+            margin-bottom: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #073b7a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer h3 {
+            margin-bottom: 5px;
+        }
+
+        footer p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+            .categories,
+            .business-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 75px 18px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .categories,
+            .business-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 15px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .about-box,
+            .contact-box {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-  <div class="logo">
-    Sardar Store LLP
-    <small>A Trust Where Quality Matters</small>
-  </div>
+    <div class="navbar">
+        <div>
+            <div class="logo">Sardar Store LLP</div>
+            <div class="tagline">A Trust Where Quality Matters</div>
+        </div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#categories">Categories</a>
-    <a href="#business">Business</a>
-    <a href="#contact">Contact</a>
-  </nav>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#categories">Categories</a>
+            <a href="#business">Business</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
+
+<!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-content">
-    <div class="badge">🇵🇰 Pakistan • General Store & Trading</div>
+    <div class="hero-content">
 
-    <h1>Welcome to <span>Sardar Store</span></h1>
+        <div class="badge">
+            🇵🇰 Pakistan • General Trading • Import & Export
+        </div>
 
-    <p>
-      A trusted general store and trading business offering
-      quality products and exploring business opportunities
-      in Pakistan and international markets.
-    </p>
+        <h1>
+            Welcome to <span>Sardar Store LLP</span>
+        </h1>
 
-    <a href="#categories" class="btn btn-white">Explore Categories</a>
-    <a href="#contact" class="btn btn-outline">Contact Us</a>
-  </div>
+        <p>
+            A trusted general trading business offering quality products,
+            agricultural machinery and equipment, dairy farming solutions,
+            electrical & electronics, automotive products, food items,
+            garments and diverse products for local and international markets.
+        </p>
+
+        <div class="buttons">
+            <a href="#categories" class="btn btn-white">
+                Explore Categories
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
 </section>
 
-<section class="about" id="about">
-  <div class="title">
-    <h2>About Sardar Store LLP</h2>
-    <p>Quality • Trust • Business</p>
-  </div>
 
-  <div class="about-box">
-    <p>
-      Sardar Store LLP is a general store and trading business
-      based in Nowshera, Khyber Pakhtunkhwa, Pakistan.
-      We deal in multiple product categories and aim to build
-      reliable relationships with customers, suppliers and
-      business partners.
-    </p>
-    <br>
-    <p class="tagline">“A Trust Where Quality Matters”</p>
-  </div>
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="section-title">
+        <h2>About Sardar Store LLP</h2>
+        <p>Quality • Trust • Business</p>
+    </div>
+
+    <div class="about-box">
+
+        <h3>Sardar Store LLP</h3>
+
+        <p>
+            Sardar Store LLP is a general store and trading business based
+            in Nowshera, Khyber Pakhtunkhwa, Pakistan. The business covers
+            a wide range of products and trading activities including
+            general merchandise, garments, food products, agricultural
+            machinery and equipment, dairy farming, electrical products,
+            automotive products, solar energy solutions, industrial
+            machinery and import & export.
+        </p>
+
+        <p class="highlight">
+            A Trust Where Quality Matters
+        </p>
+
+    </div>
+
 </section>
 
+
+<!-- CATEGORIES -->
 <section id="categories">
 
-<div class="title">
-<h2>Our Categories</h2>
-<p>Explore our products and business categories</p>
-</div>
+    <div class="section-title">
+        <h2>Our Product & Business Categories</h2>
+        <p>Different products and trading areas under Sardar Store LLP</p>
+    </div>
 
-<div class="grid">
+    <div class="categories">
 
-<div class="card">
-<div class="icon">👕</div>
-<h3>Garments & Fashion</h3>
-<p>Clothing and fashion products</p>
-</div>
+        <div class="card">
+            <div class="card-icon">👕</div>
+            <h3>Garments & Fashion</h3>
+            <p>Clothing and fashion products.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🧦</div>
-<h3>Hosiery & Socks</h3>
-<p>Socks, hosiery and related products</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🧦</div>
+            <h3>Hosiery & Socks</h3>
+            <p>Socks, hosiery and related products.</p>
+        </div>
 
-<div class="card">
-<div class="icon">👟</div>
-<h3>Shoes & Footwear</h3>
-<p>Footwear and related accessories</p>
-</div>
+        <div class="card">
+            <div class="card-icon">👟</div>
+            <h3>Shoes & Footwear</h3>
+            <p>Footwear and related accessories.</p>
+        </div>
 
-<div class="card">
-<div class="icon">👜</div>
-<h3>Bags, Belts & Accessories</h3>
-<p>Everyday fashion and lifestyle accessories</p>
-</div>
+        <div class="card">
+            <div class="card-icon">👜</div>
+            <h3>Bags, Belts & Accessories</h3>
+            <p>Everyday fashion and lifestyle accessories.</p>
+        </div>
 
-<div class="card">
-<div class="icon">⚡</div>
-<h3>Electrical & Electronics</h3>
-<p>Electrical products, equipment and electronics</p>
-</div>
+        <div class="card">
+            <div class="card-icon">💡</div>
+            <h3>Electrical & Electronics</h3>
+            <p>Electrical products, equipment and electronics.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🚗</div>
-<h3>Automotive & Auto Parts</h3>
-<p>Automotive products, parts and accessories</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🚗</div>
+            <h3>Automotive & Auto Parts</h3>
+            <p>Automotive products, parts and accessories.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🌱</div>
-<h3>Gardening Equipment</h3>
-<p>Gardening tools, equipment and supplies</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🌱</div>
+            <h3>Gardening</h3>
+            <p>Gardening tools, equipment and supplies.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🚜</div>
-<h3>Agricultural Machinery</h3>
-<p>Agricultural machinery and farm equipment</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🚜</div>
+            <h3>Agricultural Machinery & Equipment</h3>
+            <p>Agricultural machinery, farm equipment and related supplies.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🌾</div>
-<h3>Agricultural Equipment</h3>
-<p>Farming equipment, tools and agricultural supplies</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🐄</div>
+            <h3>Dairy Farming & Livestock</h3>
+            <p>Dairy farming equipment, livestock-related products and farm supplies.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🍎</div>
-<h3>Food & Grocery</h3>
-<p>Food products, grocery and general food items</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🛒</div>
+            <h3>Food & Grocery</h3>
+            <p>Food products, grocery and general food items.</p>
+        </div>
 
-<div class="card">
-<div class="icon">☀️</div>
-<h3>Solar & Energy</h3>
-<p>Solar PV, energy equipment and solutions</p>
-</div>
+        <div class="card">
+            <div class="card-icon">☀️</div>
+            <h3>Solar & Energy</h3>
+            <p>Solar PV, energy equipment and related solutions.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🔧</div>
-<h3>Tools & Hardware</h3>
-<p>Tools, hardware and general equipment</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🔧</div>
+            <h3>Tools & Hardware</h3>
+            <p>Tools, hardware and general equipment.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🏭</div>
-<h3>Industrial Machinery</h3>
-<p>Industrial machinery and technical equipment</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🏭</div>
+            <h3>Industrial Machinery</h3>
+            <p>Industrial machinery and technical equipment.</p>
+        </div>
 
-<div class="card">
-<div class="icon">📦</div>
-<h3>Packaging Materials</h3>
-<p>Packaging products and related materials</p>
-</div>
+        <div class="card">
+            <div class="card-icon">📦</div>
+            <h3>Packaging Materials</h3>
+            <p>Packaging products and related materials.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🛒</div>
-<h3>General Store Items</h3>
-<p>Daily-use products and general merchandise</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🏪</div>
+            <h3>General Store Items</h3>
+            <p>Daily-use products and general merchandise.</p>
+        </div>
 
-<div class="card">
-<div class="icon">🌍</div>
-<h3>Import & Export</h3>
-<p>International sourcing and trading opportunities</p>
-</div>
+        <div class="card">
+            <div class="card-icon">🌍</div>
+            <h3>Import & Export</h3>
+            <p>International sourcing and trading opportunities.</p>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
-<section class="business" id="business">
-  <div class="title">
-    <h2>Our Business</h2>
-    <p>Growing through quality and trusted partnerships</p>
-  </div>
 
-  <div class="grid">
+<!-- BUSINESS -->
+<section id="business">
 
-    <div class="card business-card">
-      <div class="icon">📦</div>
-      <h3>Trading</h3>
-      <p>Product sourcing, wholesale and trading opportunities.</p>
+    <div class="section-title">
+        <h2>Our Business Areas</h2>
+        <p>Trading activities and product areas of Sardar Store LLP</p>
     </div>
 
-    <div class="card business-card">
-      <div class="icon">🌍</div>
-      <h3>Import & Export</h3>
-      <p>Connecting with international suppliers and markets.</p>
+    <div class="business-grid">
+
+        <div class="business-card">
+            <h3>📦 Trading & Sourcing</h3>
+            <p>
+                General trading, wholesale, retail, distribution,
+                sourcing and supply of different products.
+            </p>
+        </div>
+
+        <div class="business-card">
+            <h3>🌍 Import & Export</h3>
+            <p>
+                Import, export and international sourcing opportunities
+                across different product categories.
+            </p>
+        </div>
+
+        <div class="business-card">
+            <h3>🚜 Agriculture & Dairy</h3>
+            <p>
+                Agricultural machinery and equipment, farming supplies
+                and dairy farming related products.
+            </p>
+        </div>
+
+        <div class="business-card">
+            <h3>⚡ Energy & Machinery</h3>
+            <p>
+                Solar energy, electrical products, automotive products,
+                tools and industrial machinery.
+            </p>
+        </div>
+
     </div>
 
-    <div class="card business-card">
-      <div class="icon">☀️</div>
-      <h3>Solar & Energy</h3>
-      <p>Exploring solar PV and modern energy solutions.</p>
-    </div>
-
-    <div class="card business-card">
-      <div class="icon">🤝</div>
-      <h3>Business Partnerships</h3>
-      <p>Open to reliable suppliers and business partners.</p>
-    </div>
-
-  </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="title">
-    <h2>Contact Us</h2>
-    <p>Let's connect for business opportunities</p>
-  </div>
 
-  <div class="contact-box">
-    <p><strong>🏢 Business:</strong> Sardar Store LLP</p>
+<!-- CONTACT -->
+<section id="contact">
 
-    <p>
-      <strong>📍 Location:</strong>
-      Saddar Bazar, Nowshera Cantt, KPK, Pakistan
-    </p>
+    <div class="section-title">
+        <h2>Contact Sardar Store LLP</h2>
+        <p>We are available for business and trading inquiries</p>
+    </div>
 
-    <p>
-      <strong>📧 Email:</strong>
-      sardarstoreofficialpk@gmail.com
-    </p>
+    <div class="contact-box">
 
-    <a class="whatsapp" href="https://wa.me/923000000000" target="_blank">
-      💬 WhatsApp Us
-    </a>
-  </div>
+        <div class="contact-info">
+
+            <h3>Business Information</h3>
+
+            <div class="contact-item">
+                <strong>Business</strong>
+                Sardar Store LLP
+            </div>
+
+            <div class="contact-item">
+                <strong>Location</strong>
+                Saddar Bazar, Nowshera Cantt,<br>
+                Nowshera, Khyber Pakhtunkhwa, Pakistan
+            </div>
+
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:sardarstoreofficialpk@gmail.com">
+                    sardarstoreofficialpk@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/923359042606" target="_blank">
+                    +92 335 9042606
+                </a>
+            </div>
+
+            <a
+                class="whatsapp"
+                href="https://wa.me/923359042606"
+                target="_blank">
+                💬 Contact us on WhatsApp
+            </a>
+
+        </div>
+
+
+        <div class="business-profile">
+
+            <h3>Business Profile</h3>
+
+            <p>
+                <strong>Nature of Business:</strong>
+                General Trading
+            </p>
+
+            <p>
+                <strong>Main Activities:</strong>
+                Importing, exporting, buying, selling,
+                wholesaling, retailing, distributing,
+                supplying and marketing.
+            </p>
+
+            <p>
+                <strong>Product Areas:</strong>
+                Agricultural products, machinery, equipment,
+                electrical products, electronics, automotive
+                products, garments, footwear, food items,
+                solar energy, industrial machinery and
+                general merchandise.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+<!-- FOOTER -->
 <footer>
-  <p><strong>Sardar Store LLP</strong></p>
-  <p class="tagline">A Trust Where Quality Matters</p>
-  <p>© 2026 Sardar Store LLP. All Rights Reserved.</p>
+
+    <h3>Sardar Store LLP</h3>
+
+    <p>A Trust Where Quality Matters</p>
+
+    <p>
+        Saddar Bazar, Nowshera Cantt, KPK, Pakistan
+    </p>
+
+    <p>
+        © 2026 Sardar Store LLP. All Rights Reserved.
+    </p>
+
 </footer>
 
 </body>
