@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +23,6 @@
             line-height: 1.6;
         }
 
-        /* HEADER */
         header {
             background: #0057b8;
             color: white;
@@ -66,7 +63,6 @@
             opacity: 0.75;
         }
 
-        /* HERO */
         .hero {
             background: linear-gradient(135deg, #0057b8, #0084ff);
             color: white;
@@ -134,7 +130,6 @@
             opacity: 0.9;
         }
 
-        /* GENERAL SECTIONS */
         section {
             max-width: 1200px;
             margin: auto;
@@ -156,7 +151,6 @@
             color: #6b7280;
         }
 
-        /* ABOUT */
         .about-box {
             background: white;
             padding: 40px;
@@ -178,13 +172,12 @@
         }
 
         .highlight {
-            margin-top: 20px;
+            margin-top: 20px !important;
             font-weight: bold;
-            color: #0057b8;
+            color: #0057b8 !important;
             font-size: 18px;
         }
 
-        /* CATEGORIES */
         .categories {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -221,7 +214,6 @@
             font-size: 14px;
         }
 
-        /* BUSINESS */
         .business-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -244,7 +236,6 @@
             opacity: 0.92;
         }
 
-        /* CONTACT */
         .contact-box {
             background: white;
             border-radius: 18px;
@@ -300,7 +291,6 @@
             margin-bottom: 8px;
         }
 
-        /* FOOTER */
         footer {
             background: #073b7a;
             color: white;
@@ -317,7 +307,30 @@
             opacity: 0.9;
         }
 
-        /* MOBILE */
+        /* FLOATING WHATSAPP */
+        .floating-whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: #16a34a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 28px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            z-index: 2000;
+            transition: 0.3s;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+        }
+
         @media (max-width: 900px) {
             .categories,
             .business-grid {
@@ -378,13 +391,17 @@
             .contact-box {
                 padding: 25px;
             }
+
+            .floating-whatsapp {
+                right: 15px;
+                bottom: 15px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="navbar">
         <div>
@@ -403,7 +420,6 @@
 </header>
 
 
-<!-- HERO -->
 <section class="hero" id="home">
     <div class="hero-content">
 
@@ -436,7 +452,6 @@
 </section>
 
 
-<!-- ABOUT -->
 <section id="about">
 
     <div class="section-title">
@@ -454,8 +469,8 @@
             a wide range of products and trading activities including
             general merchandise, garments, food products, agricultural
             machinery and equipment, dairy farming, electrical products,
-            automotive products, solar energy solutions, industrial
-            machinery and import & export.
+            automotive products, solar energy, industrial machinery and
+            import & export.
         </p>
 
         <p class="highlight">
@@ -467,7 +482,6 @@
 </section>
 
 
-<!-- CATEGORIES -->
 <section id="categories">
 
     <div class="section-title">
@@ -578,7 +592,6 @@
 </section>
 
 
-<!-- BUSINESS -->
 <section id="business">
 
     <div class="section-title">
@@ -625,7 +638,6 @@
 </section>
 
 
-<!-- CONTACT -->
 <section id="contact">
 
     <div class="section-title">
@@ -660,13 +672,13 @@
             <div class="contact-item">
                 <strong>WhatsApp</strong>
                 <a href="https://wa.me/923259042606" target="_blank">
-                    +92 335 9042606
+                    +92 325 9042606
                 </a>
             </div>
 
             <a
                 class="whatsapp"
-                href="https://wa.me/923359042606"
+                href="https://wa.me/923259042606"
                 target="_blank">
                 💬 Contact us on WhatsApp
             </a>
@@ -706,7 +718,6 @@
 </section>
 
 
-<!-- FOOTER -->
 <footer>
 
     <h3>Sardar Store LLP</h3>
@@ -722,6 +733,16 @@
     </p>
 
 </footer>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a
+    class="floating-whatsapp"
+    href="https://wa.me/923259042606"
+    target="_blank"
+    aria-label="Contact Sardar Store LLP on WhatsApp">
+    💬
+</a>
 
 </body>
 </html>
