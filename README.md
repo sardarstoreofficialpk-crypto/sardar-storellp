@@ -1,2 +1,2 @@
-# saradar-storellp
+# sardar-storellp
 Official website of Sardar Store
