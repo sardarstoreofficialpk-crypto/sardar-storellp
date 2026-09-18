@@ -1,498 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sardar Store LLP | A Trust Where Quality Matters</title>
 
-  <title>Sardar Store LLP | Quality You Can Trust</title>
-
-  <meta name="description" content="Sardar Store LLP - General Store, Trading and Business Solutions. A Trust Where Quality Matters.">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f5f8fc;
-      color: #172033;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0066cc, #003b7a);
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      display: block;
-      font-size: 12px;
-      font-weight: normal;
-      opacity: .85;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 22px;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      opacity: .75;
-    }
-
-    .hero {
-      min-height: 570px;
-      display: flex;
-      align-items: center;
-      padding: 70px 7%;
-      background:
-        linear-gradient(rgba(0,55,115,.88), rgba(0,30,70,.92));
-      color: white;
-    }
-
-    .hero-content {
-      max-width: 720px;
-    }
-
-    .hero h1 {
-      font-size: 52px;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 span {
-      color: #69c0ff;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-      opacity: .92;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-
-    .btn-primary {
-      background: white;
-      color: #0057a8;
-    }
-
-    .btn-secondary {
-      border: 1px solid white;
-      color: white;
-    }
-
-    section {
-      padding: 70px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .section-title h2 {
-      font-size: 35px;
-      color: #003b7a;
-    }
-
-    .section-title p {
-      color: #667085;
-      margin-top: 8px;
-    }
-
-    .about {
-      background: white;
-    }
-
-    .about-box {
-      max-width: 950px;
-      margin: auto;
-      text-align: center;
-      font-size: 18px;
-      color: #4b5563;
-    }
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
-
-    .category {
-      background: white;
-      padding: 30px 20px;
-      text-align: center;
-      border-radius: 14px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.07);
-      transition: .3s;
-    }
-
-    .category:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0,80,160,.15);
-    }
-
-    .category .icon {
-      font-size: 42px;
-      margin-bottom: 12px;
-    }
-
-    .category h3 {
-      color: #003b7a;
-    }
-
-    .business {
-      background: #eef6ff;
-    }
-
-    .business-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
-    }
-
-    .business-card {
-      background: white;
-      padding: 28px;
-      border-radius: 14px;
-      border-left: 5px solid #0066cc;
-      box-shadow: 0 5px 18px rgba(0,0,0,.06);
-    }
-
-    .business-card h3 {
-      color: #0057a8;
-      margin-bottom: 8px;
-    }
-
-    .contact {
-      background: white;
-    }
-
-    .contact-box {
-      max-width: 800px;
-      margin: auto;
-      background: #f5f9ff;
-      padding: 35px;
-      border-radius: 15px;
-      text-align: center;
-    }
-
-    .contact-box p {
-      margin: 12px 0;
-      font-size: 17px;
-    }
-
-    .whatsapp {
-      background: #128c7e;
-      color: white;
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    footer {
-      background: #002b57;
-      color: white;
-      text-align: center;
-      padding: 30px 7%;
-    }
-
-    footer p {
-      margin: 5px 0;
-    }
-
-    .tagline {
-      color: #9dd6ff;
-      font-style: italic;
-    }
-
-    @media (max-width: 700px) {
-
-      header {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav a {
-        margin: 0 6px;
-        font-size: 13px;
-      }
-
-      .hero {
-        min-height: 500px;
-        padding: 50px 6%;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      section {
-        padding: 55px 6%;
-      }
-
-      .section-title h2 {
-        font-size: 29px;
-      }
-    }
-  </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f5f8fc;color:#172033}
+header{
+  background:#0057b8;color:white;padding:18px 7%;
+  display:flex;justify-content:space-between;align-items:center;
+  position:sticky;top:0;z-index:1000
+}
+.logo{font-size:24px;font-weight:bold}
+.logo small{display:block;font-size:11px;font-weight:normal;margin-top:3px}
+nav a{color:white;text-decoration:none;margin-left:22px;font-weight:bold}
+.hero{
+  min-height:560px;padding:80px 7%;display:flex;align-items:center;
+  background:linear-gradient(135deg,#003b7a,#0084e8);color:white
+}
+.hero-content{max-width:720px}
+.badge{
+  display:inline-block;background:rgba(255,255,255,.15);
+  padding:8px 15px;border-radius:30px;margin-bottom:20px
+}
+h1{font-size:56px;line-height:1.1;margin-bottom:20px}
+h1 span{color:#75d0ff}
+.hero p{font-size:20px;line-height:1.7;margin-bottom:30px}
+.btn{
+  display:inline-block;padding:14px 24px;border-radius:8px;
+  text-decoration:none;font-weight:bold;margin-right:10px
+}
+.btn-white{background:white;color:#0057b8}
+.btn-outline{border:1px solid white;color:white}
+section{padding:75px 7%}
+.title{text-align:center;margin-bottom:45px}
+.title h2{font-size:36px;color:#003b7a}
+.title p{color:#667085;margin-top:8px}
+.about{background:white}
+.about-box{max-width:900px;margin:auto;text-align:center;font-size:18px;line-height:1.8;color:#4b5563}
+.tagline{color:#0066cc;font-weight:bold;font-style:italic}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px
+}
+.card{
+  background:white;padding:30px 20px;text-align:center;border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);transition:.3s
+}
+.card:hover{transform:translateY(-7px)}
+.icon{font-size:42px;margin-bottom:12px}
+.card h3{color:#0057a8;margin-bottom:8px}
+.card p{color:#667085;font-size:14px}
+.business{background:#eef6ff}
+.business-card{text-align:left;border-left:5px solid #0066cc}
+.contact{background:white}
+.contact-box{
+  max-width:800px;margin:auto;background:#f1f7ff;
+  padding:35px;border-radius:15px;text-align:center
+}
+.contact-box p{margin:12px;font-size:17px}
+.whatsapp{
+  display:inline-block;background:#128c7e;color:white;
+  padding:14px 25px;border-radius:8px;text-decoration:none;font-weight:bold;
+  margin-top:15px
+}
+footer{background:#002b57;color:white;text-align:center;padding:35px 7%}
+footer p{margin:7px}
+@media(max-width:700px){
+ header{flex-direction:column;gap:15px}
+ nav a{margin:0 6px;font-size:12px}
+ .hero{padding:60px 6%;min-height:520px}
+ h1{font-size:40px}
+ .hero p{font-size:17px}
+ section{padding:55px 6%}
+ .title h2{font-size:29px}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
+<header>
+  <div class="logo">
+    Sardar Store LLP
+    <small>A Trust Where Quality Matters</small>
+  </div>
 
-    <div class="logo">
-      Sardar Store LLP
-      <span>A Trust Where Quality Matters</span>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#categories">Categories</a>
+    <a href="#business">Business</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="badge">🇵🇰 Pakistan • General Store & Trading</div>
+
+    <h1>Welcome to <span>Sardar Store</span></h1>
+
+    <p>
+      A trusted general store and trading business offering
+      quality products and exploring business opportunities
+      in Pakistan and international markets.
+    </p>
+
+    <a href="#categories" class="btn btn-white">Explore Categories</a>
+    <a href="#contact" class="btn btn-outline">Contact Us</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="title">
+    <h2>About Sardar Store LLP</h2>
+    <p>Quality • Trust • Business</p>
+  </div>
+
+  <div class="about-box">
+    <p>
+      Sardar Store LLP is a general store and trading business
+      based in Nowshera, Khyber Pakhtunkhwa, Pakistan.
+      We deal in multiple product categories and aim to build
+      reliable relationships with customers, suppliers and
+      business partners.
+    </p>
+    <br>
+    <p class="tagline">“A Trust Where Quality Matters”</p>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="title">
+    <h2>Our Categories</h2>
+    <p>Explore our product and business categories</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="icon">👕</div>
+      <h3>Garments</h3>
+      <p>Clothing and fashion products</p>
     </div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#categories">Categories</a>
-      <a href="#business">Business</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </header>
-
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-
-    <div class="hero-content">
-
-      <h1>
-        Welcome to <span>Sardar Store</span>
-      </h1>
-
-      <p>
-        Your trusted general store and trading partner.
-        We connect quality products, reliable services and
-        business opportunities under one name.
-      </p>
-
-      <a href="#categories" class="btn btn-primary">
-        Explore Categories
-      </a>
-
-      <a href="#contact" class="btn btn-secondary">
-        Contact Us
-      </a>
-
+    <div class="card">
+      <div class="icon">🧦</div>
+      <h3>Hosiery</h3>
+      <p>Socks and hosiery products</p>
     </div>
 
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <div class="section-title">
-      <h2>About Sardar Store LLP</h2>
-      <p>Quality, reliability and business growth</p>
+    <div class="card">
+      <div class="icon">👟</div>
+      <h3>Shoes</h3>
+      <p>Footwear and accessories</p>
     </div>
 
-    <div class="about-box">
-
-      <p>
-        Sardar Store LLP is a general store and trading business
-        based in Nowshera, Khyber Pakhtunkhwa, Pakistan.
-        We deal in a variety of product categories and aim to
-        provide reliable products and professional business services.
-      </p>
-
-      <br>
-
-      <p class="tagline">
-        "A Trust Where Quality Matters"
-      </p>
-
+    <div class="card">
+      <div class="icon">👜</div>
+      <h3>Bags & Belts</h3>
+      <p>Everyday accessories</p>
     </div>
 
-  </section>
-
-
-  <!-- CATEGORIES -->
-  <section id="categories">
-
-    <div class="section-title">
-      <h2>Our Categories</h2>
-      <p>Explore our wide range of products</p>
+    <div class="card">
+      <div class="icon">🛒</div>
+      <h3>General Items</h3>
+      <p>Daily-use products</p>
     </div>
 
-    <div class="categories">
-
-      <div class="category">
-        <div class="icon">👕</div>
-        <h3>Garments</h3>
-        <p>Clothing and fashion products</p>
-      </div>
-
-      <div class="category">
-        <div class="icon">🧦</div>
-        <h3>Hosiery</h3>
-        <p>Socks and hosiery products</p>
-      </div>
-
-      <div class="category">
-        <div class="icon">👟</div>
-        <h3>Shoes</h3>
-        <p>Footwear and related products</p>
-      </div>
-
-      <div class="category">
-        <div class="icon">👜</div>
-        <h3>Bags & Belts</h3>
-        <p>Everyday accessories</p>
-      </div>
-
-      <div class="category">
-        <div class="icon">🛒</div>
-        <h3>General Items</h3>
-        <p>Daily-use general products</p>
-      </div>
-
-      <div class="category">
-        <div class="icon">📦</div>
-        <h3>Trading</h3>
-        <p>Import, export and trading</p>
-      </div>
-
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>Import & Export</h3>
+      <p>International trading opportunities</p>
     </div>
 
-  </section>
+  </div>
+</section>
 
+<section class="business" id="business">
+  <div class="title">
+    <h2>Our Business</h2>
+    <p>Growing through quality and trusted partnerships</p>
+  </div>
 
-  <!-- BUSINESS -->
-  <section class="business" id="business">
+  <div class="grid">
 
-    <div class="section-title">
-      <h2>Our Business</h2>
-      <p>Building opportunities through quality and trust</p>
+    <div class="card business-card">
+      <div class="icon">📦</div>
+      <h3>Trading</h3>
+      <p>Product sourcing, wholesale and trading opportunities.</p>
     </div>
 
-    <div class="business-grid">
-
-      <div class="business-card">
-        <h3>🛍️ General Store</h3>
-        <p>
-          A wide range of products for everyday customers
-          and business needs.
-        </p>
-      </div>
-
-      <div class="business-card">
-        <h3>🌍 Import & Export</h3>
-        <p>
-          Exploring international sourcing, trading and
-          business opportunities.
-        </p>
-      </div>
-
-      <div class="business-card">
-        <h3>☀️ Solar & Energy</h3>
-        <p>
-          Interest in solar PV, energy solutions and
-          related technologies.
-        </p>
-      </div>
-
-      <div class="business-card">
-        <h3>📦 Supply & Logistics</h3>
-        <p>
-          Product sourcing, packaging, warehousing and
-          logistics opportunities.
-        </p>
-      </div>
-
+    <div class="card business-card">
+      <div class="icon">🌍</div>
+      <h3>Import & Export</h3>
+      <p>Connecting with international suppliers and markets.</p>
     </div>
 
-  </section>
-
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Let's connect for business opportunities</p>
+    <div class="card business-card">
+      <div class="icon">☀️</div>
+      <h3>Solar & Energy</h3>
+      <p>Exploring solar PV and modern energy solutions.</p>
     </div>
 
-    <div class="contact-box">
-
-      <p><strong>🏢 Business:</strong> Sardar Store LLP</p>
-
-      <p>
-        <strong>📍 Location:</strong>
-        Saddar Bazar, Nowshera Cantt, KPK, Pakistan
-      </p>
-
-      <p>
-        <strong>📧 Email:</strong>
-        sardarstoreofficialpk@gmail.com
-      </p>
-
-      <a
-        class="whatsapp"
-        href="https://wa.me/9233259042606"
-        target="_blank">
-        💬 Contact on WhatsApp
-      </a>
-
+    <div class="card business-card">
+      <div class="icon">🤝</div>
+      <h3>Business Partnerships</h3>
+      <p>Open to reliable suppliers and business partners.</p>
     </div>
 
-  </section>
+  </div>
+</section>
 
+<section class="contact" id="contact">
+  <div class="title">
+    <h2>Contact Us</h2>
+    <p>Let's connect for business opportunities</p>
+  </div>
 
-  <!-- FOOTER -->
-  <footer>
+  <div class="contact-box">
+    <p><strong>🏢 Business:</strong> Sardar Store LLP</p>
 
-    <p><strong>Sardar Store LLP</strong></p>
-
-    <p class="tagline">
-      A Trust Where Quality Matters
+    <p>
+      <strong>📍 Location:</strong>
+      Saddar Bazar, Nowshera Cantt, KPK, Pakistan
     </p>
 
     <p>
-      © 2026 Sardar Store LLP. All Rights Reserved.
+      <strong>📧 Email:</strong>
+      sardarstoreofficialpk@gmail.com
     </p>
 
-  </footer>
+    <a class="whatsapp" href="https://wa.me/923000000000" target="_blank">
+      💬 WhatsApp Us
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Sardar Store LLP</strong></p>
+  <p class="tagline">A Trust Where Quality Matters</p>
+  <p>© 2026 Sardar Store LLP. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
